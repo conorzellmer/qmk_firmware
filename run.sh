@@ -1,0 +1,1 @@
+qmk flash | tee -a flash.log

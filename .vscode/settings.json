@@ -35,23 +35,37 @@
     "[json]": {
         "editor.formatOnSave": false
     },
-    "clangd.arguments": ["--header-insertion=never"],
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ],
     "json.schemas": [
         {
-            "fileMatch": ["qmk.json"],
+            "fileMatch": [
+                "qmk.json"
+            ],
             "url": "./data/schemas/user_repo_v1_1.jsonschema"
         },
         {
-            "fileMatch": ["qmk_module.json"],
+            "fileMatch": [
+                "qmk_module.json"
+            ],
             "url": "./data/schemas/community_module.jsonschema"
         },
         {
-            "fileMatch": ["keyboard.json", "info.json"],
+            "fileMatch": [
+                "keyboard.json",
+                "info.json"
+            ],
             "url": "./data/schemas/keyboard.jsonschema"
         },
         {
-            "fileMatch": ["keymap.json"],
+            "fileMatch": [
+                "keymap.json"
+            ],
             "url": "./data/schemas/keymap.jsonschema"
         }
-    ]
+    ],
+    "makefile.configureOnOpen": true,
+    "cmake.sourceDirectory": "/home/conor/lib/repos/qmk_firmware/lib/pico-sdk/src/rp2040",
+    "editor.formatOnSave": false
 }
