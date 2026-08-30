@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,         KC_Q,     KC_W,     KC_E,    KC_R,    KC_T,    KC_Y,     KC_U,    KC_I,    KC_O,    KC_P,     KC_LBRC,  KC_RBRC,  KC_BSLS,          KC_DEL,
         LCTL_T(KC_ESC), KC_A,     KC_S,     KC_D,    KC_F,    KC_G,              KC_H,    KC_J,    KC_K,    KC_L,     KC_SCLN,  KC_QUOT,  KC_ENT,           KC_HOME,
         KC_LSFT,           KC_Z,     KC_X,    KC_C,    KC_V,    KC_B,     KC_B,    KC_N,    KC_M,    KC_COMM,  KC_DOT,   KC_SLSH,  KC_RSFT, KC_UP,
-        KC_LCTL, KC_LWIN,  KC_LALT,           LALT_T(KC_BSPC),           LT(_FN2, KC_SPACE), LT(_FN3, KC_SPACE),         KC_SPC,            KC_RALT,            KC_LEFT, KC_DOWN, KC_RGHT),
+        KC_LCTL, KC_LWIN,  KC_LALT,           LALT_T(KC_SPACE),           LT(_FN2, KC_SPACE), LT(_FN3, KC_SPACE),         KC_SPC,            KC_RALT,            KC_LEFT, KC_DOWN, KC_RGHT),
 
     [_FN1] = LAYOUT_ansi_69(
         KC_GRV,  KC_BRID,  KC_BRIU,  KC_NO,   KC_NO,   RM_VALD, RM_VALU,  KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,          RM_TOGG,
@@ -53,15 +53,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_FN2] = LAYOUT_ansi_69(
         KC_GRV,  KC_BRID,  KC_BRIU,  KC_TASK, KC_FLXP, RM_VALD, RM_VALU,  KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE,  KC_VOLD,  KC_VOLU,  _______,          RM_TOGG,
-        KC_TAB, KC_HOME,  KC_HOME,  KC_END, LCTL(LSFT(KC_TAB)),  LCTL(KC_TAB), _______,  _______, _______, _______, _______,  _______,  _______,  _______,          _______,
-        LCTL_T(KC_ESC), KC_LALT,  KC_LSFT,  LCTL(KC_BSPC), _______, _______,           LCTL(KC_LEFT),  LCTL(KC_DOWN),  LCTL(KC_UP),    LCTL(KC_RIGHT),  _______,  _______,  _______,          _______,
+        KC_TAB, KC_HOME,  KC_HOME,  KC_END, LCTL(LSFT(KC_TAB)),  LCTL(KC_TAB), _______,  _______, _______, _______, LCTL(LSFT(KC_P)),  _______,  _______,  _______,          _______,
+        LCTL_T(KC_ESC), KC_LALT,  KC_LSFT,  LCTL(KC_BSPC), _______, _______,           KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,  _______,  _______,  _______,          _______,
         _______,           _______,  _______, _______, _______, _______,  _______, NK_TOGG, _______, _______,  _______,  _______,  _______, _______,
         _______, _______,  _______,           _______,          _______,  KC_DEL,          _______,           _______,            _______, _______, _______),
 
     [_FN3] = LAYOUT_ansi_69(
         KC_TILD, KC_F1,    KC_F2,    KC_F3,   KC_F4,   KC_F5,   KC_F6,    KC_F7,   KC_F8,   KC_F9,   KC_F10,   KC_F11,   KC_F12,   _______,          _______,
         KC_TAB, KC_HOME,  KC_HOME,  KC_END, LCTL(LSFT(KC_TAB)),  LCTL(KC_TAB), _______,  _______, _______, _______, LCTL(LSFT(KC_P)),  _______,  _______,  _______,          _______,
-        LCTL_T(KC_ESC), KC_LALT,  KC_LSFT,  LCTL(KC_BSPC), _______, _______,           LCTL(KC_LEFT),  LCTL(KC_DOWN),  LCTL(KC_UP),    LCTL(KC_RIGHT),  _______,  _______,  _______,          _______,
+        LCTL_T(KC_ESC), KC_LALT,  KC_LSFT,  LCTL(KC_BSPC), _______, _______,           KC_LEFT,  KC_DOWN,  KC_UP,    KC_RIGHT,  _______,  _______,  _______,          _______,
         _______,           _______,  _______, _______, _______, _______,  _______, _______, _______, _______,  _______,  _______,  _______, _______,
         _______, _______,  _______,           _______,          LCTL(KC_BSPC),  _______,          _______,           _______,            _______, _______, _______)
 };
